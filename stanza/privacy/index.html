@@ -15,16 +15,16 @@
 <p>Updated <time datetime="2026-11-14">14 November 2026</time>.</p>
 <p>Stanza is a personal application operated by Otis H. Z. This policy covers its private workspace and separate Google workflows.</p>
 <h2>Data and purpose</h2>
-<p>YouTube read-only access retrieves channel information, subscriptions and playlist metadata for personal review. Data Portability access requests a copy of YouTube activity. These permissions do not authorize subscription or playlist changes.</p>
-<p>The workspace stores saved links, content, notes and classifications. It uses local sign-in. Its Feed interface is installed; direct Google retrieval and import into the workspace are not implemented.</p>
+<p>Ongoing Google access is limited to YouTube read-only access for playlist videos, channel information, subscriptions and playlist metadata. It does not authorize changes to your YouTube account. The feed also retrieves X bookmarks through the existing X connection.</p>
+<p>A completed one-off YouTube activity export is retained separately for private analysis. Future Data Portability requests have been retired. Historical activity is not automatically added to the feed or used to change Seen state. Watch Later, when captured separately, remains a separate private list.</p>
+<p>The workspace stores saved links, content, notes, feed metadata and classifications. Saving a feed item to the library is an explicit action. Workspace access remains private.</p>
 <h2>Storage and processing</h2>
-<p>Google credentials and retrieved results are stored on the operator’s Mac. Workspace data is stored on a private server. Credential files have owner-only permissions and workspace model keys are encrypted; encryption of all stored data and backups has not been verified.</p>
-<p>Optional classification sends resource URLs, titles, descriptions, captured text, a limited note excerpt, subjects and selected examples to OpenAI. Other model providers can be configured. Provider retention terms apply; requesting <code>store: false</code> does not guarantee zero retention.</p>
-<p>The review has not established that Google exports or subscription results are sent to a model provider. If Google-derived material is saved and classified, it may enter the processing described above.</p>
-<p>Google receives authorization and API requests. GitHub Pages receives ordinary website request metadata. These public pages use no analytics, remote fonts, forms or sign-in scripts.</p>
+<p>The original Google credentials and historical exports are stored on the operator’s Mac, protected by FileVault and restricted file permissions. The connector also uses private server credentials. Workspace data is stored on a private server; server-wide disk encryption is not implemented. Application encryption of model keys does not encrypt all workspace data or backups.</p>
+<p>Feed evaluation can send incoming X and YouTube URLs, titles and descriptions to OpenAI before an item is saved. Requests can include subject guidance and selected reviewed library examples. Saved-resource classification can also send captured text and a limited note excerpt. Provider retention terms apply; requesting <code>store: false</code> does not guarantee zero retention. No model calls are part of the historical import.</p>
+<p>Google and X receive authorization and retrieval requests. GitHub Pages receives ordinary website request metadata. These public pages use no analytics, remote fonts, forms or sign-in scripts.</p>
 <h2>Retention and deletion</h2>
-<p>A fixed retention period for Google results, exports and backups has not been established. Authorization duration is separate from data retention.</p>
-<p>Saved items can be deleted in the workspace. To request deletion of local credentials, exports or associated copies, email <a href="mailto:mail@otishz.com">mail@otishz.com</a>. Deletion of all backups and provider-held copies, and a completion deadline, are not guaranteed.</p>
+<p>Raw historical exports and temporary read results become eligible for manual deletion 30 days after successful import or explicit review approving disposal. Pending or held artifacts are preserved. Cleanup is manually triggered; there is no scheduled deletion job. Selected datasets and saved workspace content remain until deliberately deleted.</p>
+<p>To request deletion, email <a href="mailto:mail@otishz.com">mail@otishz.com</a>. Local deletion does not erase every backup, snapshot or provider-held copy. Backup and provider retention vary; no universal deletion deadline is guaranteed.</p>
 <p>Revoke future Google access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation does not delete copies already stored.</p>
 </main>
 <footer>By Otis H. Z. · <a href="mailto:mail@otishz.com">Contact</a></footer>
