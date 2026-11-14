@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy policy · t3code</title>
+  <meta name="description" content="Data handling for the personal t3code Google integrations and Library tools.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><nav aria-label="Main navigation"><a href="../">t3code</a><a href="./">Privacy policy</a></nav></header>
+<main>
+<h1>Privacy policy</h1>
+<p>Last reviewed: <time datetime="2026-11-14">14 November 2026</time>.</p>
+<p>Otis Heric operates t3code for personal use. This policy covers the Google integrations associated with Library-boopmark and YouTube Read Access, and their relationship to the private Library tools. Contact <a href="mailto:heric.otis@gmail.com">heric.otis@gmail.com</a> with privacy questions or deletion requests.</p>
+<h2>Google data and purpose</h2>
+<ul>
+<li>The separate YouTube read workflow has the <code>youtube.readonly</code> permission. Local results include channel information, subscriptions and playlist metadata for personal review. This permission does not authorize subscription or playlist changes.</li>
+<li>The Data Portability workflow has the <code>dataportability.myactivity.youtube</code> permission and an owner-requested export of <code>myactivity.youtube</code>, covering YouTube activity. A local job record requests 180-day access. That request does not establish the actual lifetime of Google's authorization.</li>
+<li>The installed Library uses local-password sign-in. Its direct YouTube connector is not installed. No completed import of the Google activity export into Library was established in the latest review.</li>
+</ul>
+<h2>Storage and access</h2>
+<p>The separate Google credentials and YouTube results are stored in the operator's local user account on his Mac. The reviewed credential files have owner-only file permissions. Library stores saved resources, metadata and generated classifications on the operator's private OMV server, with PostgreSQL and local file storage. Model API keys in Library settings are encrypted by the application. These facts do not imply that all stored data or backups are encrypted.</p>
+<h2>Model processing and other recipients</h2>
+<p>Library uses OpenAI for classification. Classification requests can contain a saved resource's URL, title, description, captured text, a bounded personal-note hint, the subject catalogue and selected examples from saved resources. The implementation also supports other configured model providers, including Anthropic; provider selection controls the recipient.</p>
+<p>The OpenAI classification implementation requests <code>store: false</code>. This is not a guarantee of zero provider retention. Model providers apply their own data-handling terms.</p>
+<p>The review did not establish that the separate Google export or subscription results have been sent to OpenAI or another model provider. Saving Google-derived content into Library and classifying it could send that content or metadata through the classification flow described above.</p>
+<p>Google receives authorization and API requests. A public website's hosting provider receives ordinary page requests, including network information such as an IP address. These static pages contain no analytics scripts, remote fonts, forms or Google sign-in flow.</p>
+<h2>Retention, deletion and revocation</h2>
+<p>A fixed retention period and an automated deletion schedule for the separate YouTube results, Google exports and backup copies have not been established. Do not interpret the requested 180-day authorization as a data-deletion deadline.</p>
+<p>The operator can delete saved bookmarks in Library. Deleting a bookmark does not establish that every copied file, export, backup or model-provider record has been erased. Contact the operator to request deletion of locally retained credentials, exports and associated copies; a guaranteed completion time has not been established.</p>
+<p>You can review and revoke Google access at <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation stops future authorized access; it does not itself delete already stored copies.</p>
+<h2>Changes</h2>
+<p>This page must be reviewed when the integrations or data handling change. It describes the behavior established at the review date and identifies the remaining unknowns.</p>
+</main>
+<footer>Contact: <a href="mailto:heric.otis@gmail.com">heric.otis@gmail.com</a></footer>
+</body>
+</html>

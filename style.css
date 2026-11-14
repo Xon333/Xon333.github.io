@@ -1,0 +1,31 @@
+/* M4 Attention: exact semantic colors from the owner-supplied T3 theme. */
+:root {
+  color-scheme: dark;
+  --canvas: oklch(0.191251 0 0);
+  --surface: oklch(0.222129 0 0);
+  --text: oklch(0.970151 0 0);
+  --textMuted: oklch(0.646727 0 0);
+  --border: oklch(0.260325 0 0);
+  --focus: oklch(0.858008 0.157232 171.744);
+  --accent: oklch(0.858008 0.157232 171.744);
+  --codeBackground: oklch(0.222129 0 0);
+  --codeForeground: oklch(0.970151 0 0);
+  color: var(--text);
+  background: var(--canvas);
+  font-family: system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+header, main, footer { width: min(100% - 2.5rem, 44rem); margin-inline: auto; }
+header { padding-block: 2rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 5px; }
+main { background: var(--surface); padding: clamp(1.25rem, 4vw, 2.5rem); border: 1px solid var(--border); border-radius: .5rem; }
+h1 { font-size: clamp(2rem, 7vw, 3rem); line-height: 1.12; margin-top: 0; }
+h2 { font-size: 1.25rem; margin-top: 2rem; }
+p, li { line-height: 1.7; overflow-wrap: anywhere; }
+li + li { margin-top: .6rem; }
+ul { padding-left: 1.4rem; }
+code { background: var(--codeBackground); color: var(--codeForeground); }
+footer { padding-block: 1.5rem 3rem; font-size: .9rem; color: var(--textMuted); }
