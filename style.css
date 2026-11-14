@@ -29,3 +29,8 @@ li + li { margin-top: .6rem; }
 ul { padding-left: 1.4rem; }
 code { background: var(--codeBackground); color: var(--codeForeground); }
 footer { padding-block: 1.5rem 3rem; font-size: .9rem; color: var(--textMuted); }
+
+.intro { font-size: 1.3rem; line-height: 1.5; }
+figure { margin: 2rem 0; }
+figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: .4rem; }
+figcaption { margin-top: .6rem; color: var(--textMuted); font-size: .85rem; line-height: 1.5; }
